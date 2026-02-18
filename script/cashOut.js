@@ -13,7 +13,7 @@ alert('Invalid agent number')
         return
     }else{
         alert('Success Cash out')
-        document.getElementById('balance').innerText= newBalance
+        setBalance(newBalance)
     }
     const pin =getValueFromInput('pin')
     if(pin.length !== 4){

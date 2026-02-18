@@ -1,6 +1,6 @@
 function getValueFromInput(id) {
   const input = document.getElementById(id);
-  if (input.tagName == "INPUT") {
+  if (input.tagName == "INPUT" || input.tagName == "SELECT") {
     const value = input.value;
     console.log(id, value);
     return value;
@@ -14,6 +14,11 @@ function getValueFromInput(id) {
 function getBalance() {
   const balanceElements = document.getElementById("balance");
   const balance = balanceElements.innerText;
-  console.log('current balance')
+  console.log("current balance");
   return Number(balance);
+}
+
+function setBalance(value) {
+  const balanceElements = document.getElementById("balance");
+  balanceElements.innerText = value;
 }
