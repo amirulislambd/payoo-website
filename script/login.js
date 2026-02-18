@@ -1,4 +1,4 @@
-document.getElementById('login-bg').addEventListener('click',function(){
+document.getElementById('login-btn').addEventListener('click',function(){
     const numberInput = document.getElementById('phone-number')
     const contactNumber = numberInput.value
     const passwordInput = document.getElementById('password')
