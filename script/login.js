@@ -2,7 +2,7 @@ document.getElementById('login-btn').addEventListener('click',function(e){
     e.preventDefault()
     const inputNumber =document.getElementById('phone-number')
     const contactNumber = inputNumber.value
-    const numberPattern = /^01\d{9}$/
+    const numberPattern =new RegExp(/^01\d{9}$/)
     const passwordInput =document.getElementById('password')
     const password = passwordInput.value
     // console.log(contactNumber, password)
