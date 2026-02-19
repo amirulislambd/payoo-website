@@ -10,7 +10,7 @@ document.getElementById('login-btn').addEventListener('click',function(){
     if(contactNumber == '01814022917' && password.length == 4){
         alert('Login Success')
 
-        window.location.replace('/home.html')
+        window.location.replace('./home.html')
     }else{
         alert('Login failed')
     }
