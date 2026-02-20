@@ -14,7 +14,12 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
   }
   //  3 get amount
   const amount = getValueFromInput("add-money-amount");
-  const newBalance = getBalance() + Number(amount);
+  const convertTonumberAmount = Number(amount)
+  if(convertTonumberAmount <=0 ){
+    alert("Invalid amount")
+    return
+  }
+  const newBalance = getBalance() + convertTonumberAmount;
   console.log(newBalance);
 
   const pin = getValueFromInput("add-money-pin");

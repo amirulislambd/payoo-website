@@ -87,7 +87,7 @@
           class="btn flex flex-col h-full py-4 btn-primary btn-soft"
         >
           <img src="./assets/opt-3.png" alt="btn" />
-          <p>Transfer Money</p>
+          <p class="text-[13px] font-bold">Transfer Money</p>
         </button>
         <button
           onclick="showOnly('Get-Bonus')"
@@ -317,6 +317,7 @@
             <input
               id="pay-bill-number"
               type="tel"
+              maxlength="16"
               class="input rounded-full bg-base-200 outline-none w-full"
               placeholder="Enter account number"
               pattern="[0-9]{15}"
